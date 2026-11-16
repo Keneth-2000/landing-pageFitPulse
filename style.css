@@ -1,0 +1,267 @@
+/* --- 1. RESET GLOBAL & VARIABLES DE BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #14202b;
+    background-color: #eef0f2;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- 2. HEADER / NAVIGATION --- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: #1F2937;
+    color: #eef0f2;
+    border-bottom: 1px solid wheat;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+img.logo {
+    width: 8rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header nav a {
+    font-weight: 600;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.header nav a:hover {
+    border-bottom-color: red;
+}
+
+/* --- 3. SECTION HERO --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 15%;
+    gap: 2rem;
+    background-color: #1F2937;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #F9FAF8;
+}
+
+.hero-container p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #3882f6;
+    color: #FFFFFF;
+    padding: 0.25rem 1rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2b6ad0;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --- 4. SECTION PROGRAMMES --- */
+.programs-section {
+    padding: 5rem 15%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.programs-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #1F2937;
+}
+
+.programs-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.programs-grid > li {
+    flex: 1;
+    max-width: 220px;
+    min-width: 200px;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-image-wrapper {
+    width: 220px;
+    height: 160px;
+    border: 4px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+/* --- 5. SECTION CITATION / QUOTE --- */
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 100px 15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px;
+}
+
+.quote-section blockquote p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    line-height: 1.4;
+}
+
+.quote-author {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1F2937;
+    margin-top: 15px;
+}
+
+/* --- 6. SECTION CALL TO ACTION (CTA) --- */
+.cta-section {
+    background-color: #FFFFFF;
+    padding: 100px 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-banner {
+    background-color: #3882F6;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px 80px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.cta-text-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.cta-text-content p {
+    font-size: 16px;
+    color: #E5E7EB;
+}
+
+.btn-cta {
+    background-color: #3882F6;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #2b6ad0;
+}
+
+/* --- 7. PIED DE PAGE (FOOTER) --- */
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 16px;
+} 
+
+/* The End */
